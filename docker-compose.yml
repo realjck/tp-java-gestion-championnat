@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  mysql:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1243
+      MYSQL_INITDB_VARS: "character_set_server=utf8mb4 collation_server=utf8mb4_unicode_ci"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    environment:
+      PMA_HOST: mysql
+      MYSQL_ROOT_PASSWORD: rootpassword
+      UPLOAD_LIMIT: 256M
+    ports:
+      - 8080:80
+
+volumes:
+  mysql-data:
