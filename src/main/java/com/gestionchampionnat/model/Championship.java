@@ -1,10 +1,13 @@
 package com.gestionchampionnat.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "championship")
@@ -35,6 +38,15 @@ public class Championship {
 
     @Column(name = "draw_point")
     private int drawPoint;
+
+    @ManyToMany(fetch = FetchType.LAZY,
+    cascade = {
+            CascadeType.PERSIST,
+            CascadeType.MERGE
+    },
+    mappedBy = "championships")
+    @JsonIgnore
+    private final Set<Team> teams = new HashSet<>();
 
     public Championship(String name, Date startDate, Date endDate) {
         this.name = name;
@@ -102,5 +114,10 @@ public class Championship {
 
     public void setDrawPoint(int drawPoint) {
         this.drawPoint = drawPoint;
+    }
+
+
+    public Set<Team> getTeams() {
+        return teams;
     }
 }
