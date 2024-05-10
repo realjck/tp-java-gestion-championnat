@@ -78,6 +78,7 @@ public class DayController {
 
     /**
      * Créer une journée pour un championnat
+     * -------------------------------------
      * {
      *     "number": "Journée#01",
      *     "championship": {
