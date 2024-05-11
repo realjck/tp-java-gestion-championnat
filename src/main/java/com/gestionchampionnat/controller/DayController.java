@@ -94,7 +94,7 @@ public class DayController {
                 .orElseThrow(() -> new RuntimeException("Championnat non trouvé"));
         day.setChampionship(championship);
         Day createdDay = dayRepository.save(day);
-        return ResponseEntity.ok(createdDay);
+        return new ResponseEntity<>(createdDay, HttpStatus.CREATED);
     }
 
     /**

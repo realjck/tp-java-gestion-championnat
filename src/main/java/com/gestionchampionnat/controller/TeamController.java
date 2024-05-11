@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -91,20 +92,20 @@ public class TeamController {
      * @return ResponseEntity<String>
      */
     @PostMapping("/add-to-championship/{teamId}/{championshipId}")
-    public ResponseEntity<String> addTeamToChampionship(@PathVariable Long teamId, @PathVariable Long championshipId) {
+    public ResponseEntity<Team> addTeamToChampionship(@PathVariable Long teamId, @PathVariable Long championshipId) {
         Optional<Team> optionalTeam = teamRepository.findById(teamId);
         if (optionalTeam.isEmpty()) {
-            return new ResponseEntity<>("Équipe non trouvée", HttpStatus.NOT_FOUND);
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
         Optional<Championship> optionalChampionship = championshipRepository.findById(championshipId);
         if (optionalChampionship.isEmpty()) {
-            return new ResponseEntity<>("Championnat non trouvé", HttpStatus.NOT_FOUND);
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
         }
         Team team = optionalTeam.get();
         Championship championship = optionalChampionship.get();
         team.addChampionship(championship);
         teamRepository.save(team);
-        return new ResponseEntity<>("Équipe ajoutée au championnat avec succès", HttpStatus.OK);
+        return new ResponseEntity<>(team, HttpStatus.OK);
     }
 
     /**
@@ -133,14 +134,13 @@ public class TeamController {
      * @return ResponseEntity<String>
      */
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteTeam(@PathVariable Long id) {
+    public ResponseEntity<Void> deleteTeam(@PathVariable Long id) {
         Optional<Team> optionalTeam = teamRepository.findById(id);
         if (optionalTeam.isEmpty()) {
-            return new ResponseEntity<>("Équipe non trouvée", HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-
         teamRepository.deleteById(id);
-        return new ResponseEntity<>("Équipe supprimée avec succès", HttpStatus.OK);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 
