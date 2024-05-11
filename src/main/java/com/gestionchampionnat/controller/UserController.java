@@ -66,7 +66,7 @@ public class UserController {
      * @return User
      */
     @GetMapping(value = "/getUserByEmailAndPassword")
-    public User getUserByEmailAndPassword(@RequestParam String email, @RequestParam String password) {
+    public ResponseEntity<User> getUserByEmailAndPassword(@RequestParam String email, @RequestParam String password) {
         List<User> users = userRepository.findAll()
                 .stream()
                 .filter(user -> user.getEmail().equals(email))
@@ -75,7 +75,7 @@ public class UserController {
         if (users.isEmpty()) {
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Utilisateur introuvable");
         }
-        return users.get(0);
+        return new ResponseEntity<>(users.get(0), HttpStatus.OK);
     }
 
     /**
