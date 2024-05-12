@@ -2,7 +2,6 @@ package com.gestionchampionnat.controller;
 
 import com.gestionchampionnat.model.Championship;
 import com.gestionchampionnat.repository.ChampionshipRepository;
-import com.gestionchampionnat.repository.DayRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -19,12 +18,10 @@ import java.util.Optional;
 public class ChampionshipController {
 
     private final ChampionshipRepository championshipRepository;
-    private final DayRepository dayRepository;
 
     @Autowired
-    public ChampionshipController(ChampionshipRepository championshipRepository, DayRepository dayRepository) {
+    public ChampionshipController(ChampionshipRepository championshipRepository) {
         this.championshipRepository = championshipRepository;
-        this.dayRepository = dayRepository;
     }
 
     /**
@@ -66,21 +63,39 @@ public class ChampionshipController {
     /**
      * Mettre à jour un championnat
      * @param id Id du championnat
-     * @param championship Nouveau Championnat
+     * @param updatedChampionship Championnat mis à jour
      * @return Championnat
      */
-    @PutMapping("/{id}")
-    public ResponseEntity<Championship> updateChampionship(@PathVariable Long id, @Valid @RequestBody Championship championship) {
-        Championship existingChampionship = championshipRepository.findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
-        existingChampionship.setName(championship.getName());
-        existingChampionship.setDrawPoint(championship.getDrawPoint());
-        existingChampionship.setLostPoint(championship.getLostPoint());
-        existingChampionship.setWonPoint(championship.getWonPoint());
-        existingChampionship.setStartDate(championship.getStartDate());
-        existingChampionship.setEndDate(championship.getEndDate());
-        Championship updatedChampionship = championshipRepository.save(existingChampionship);
-        return new ResponseEntity<>(updatedChampionship, HttpStatus.OK);
+    @PatchMapping("/{id}")
+    public ResponseEntity<Championship> updateChampionship(@PathVariable Long id, @Valid @RequestBody Championship updatedChampionship) {
+        Optional<Championship> optionalChampionship = championshipRepository.findById(id);
+        if (optionalChampionship.isPresent()) {
+            Championship championship = optionalChampionship.get();
+            // Mise à jour des données
+            if (updatedChampionship.getName() != null){
+                championship.setName(updatedChampionship.getName());
+            }
+            if (updatedChampionship.getStartDate() != null){
+                championship.setStartDate(updatedChampionship.getStartDate());
+            }
+            if (updatedChampionship.getEndDate() != null){
+                championship.setEndDate(updatedChampionship.getEndDate());
+            }
+            if (updatedChampionship.getWonPoint() != 0){
+                championship.setWonPoint(updatedChampionship.getWonPoint());
+            }
+            if (updatedChampionship.getDrawPoint() != 0){
+                championship.setDrawPoint(updatedChampionship.getDrawPoint());
+            }
+            if (updatedChampionship.getLostPoint() != 0){
+                championship.setLostPoint(updatedChampionship.getLostPoint());
+            }
+            // Sauvegarde
+            championshipRepository.save(championship);
+            return new ResponseEntity<>(championship, HttpStatus.OK);
+        } else {
+            throw new ResponseStatusException(HttpStatus.NOT_FOUND);
+        }
     }
 
     /**

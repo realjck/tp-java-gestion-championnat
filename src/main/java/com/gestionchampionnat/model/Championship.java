@@ -18,16 +18,12 @@ public class Championship {
     private Long id;
 
     @Column(name = "name")
-    @NotNull(message = "Le champ ne peut pas être null")
-    @NotBlank(message = "Le champ ne peut pas être vide")
     private String name;
 
     @Column(name = "start_date")
-    @NotNull(message = "Le champ ne peut pas être null")
     private Date startDate;
 
     @Column(name = "end_date")
-    @NotNull(message = "Le champ ne peut pas être null")
     private Date endDate;
 
     @Column(name = "won_point")
