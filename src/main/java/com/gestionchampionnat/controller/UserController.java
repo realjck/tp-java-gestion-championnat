@@ -43,14 +43,15 @@ public class UserController {
 
     /**
      * Récupérer un utilisateur suivant son id
+     *
      * @param id Id de l'utilisateur
      * @return Utilisateur
      */
     @GetMapping(value="/{id}")
-    public User getUserById(@PathVariable Long id) {
+    public ResponseEntity<Optional<User>> getUserById(@PathVariable Long id) {
         Optional<User> user = userRepository.findById(id);
-        return user.map(value -> new ResponseEntity<>(value, HttpStatus.OK))
-                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND)).getBody();
+        return user.map(value -> new ResponseEntity<>(user, HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
 
     /**

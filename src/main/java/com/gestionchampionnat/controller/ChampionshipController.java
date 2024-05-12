@@ -45,7 +45,7 @@ public class ChampionshipController {
     @GetMapping("/{id}")
     public ResponseEntity<Championship> getChampionshipById(@PathVariable Long id) {
         Championship championship = championshipRepository.findById(id).
-                orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Le championnat n'existe pas"));
         return new ResponseEntity<>(championship, HttpStatus.OK);
     }
 
