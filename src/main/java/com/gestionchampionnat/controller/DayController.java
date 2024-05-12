@@ -107,7 +107,9 @@ public class DayController {
         }
         Day existingDay = dayOptional.get();
         existingDay.setNumber(day.getNumber());
-        existingDay.setChampionship(day.getChampionship());
+        Championship championship = championshipRepository.findById(day.getChampionship().getId())
+                .orElseThrow(() -> new RuntimeException("Championnat non trouvé"));
+        existingDay.setChampionship(championship);
         Day updatedDay = dayRepository.save(existingDay);
         return new ResponseEntity<>(updatedDay, HttpStatus.OK);
     }
