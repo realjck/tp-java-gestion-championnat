@@ -31,8 +31,7 @@ public class DayController {
 
     /**
      * Récupérer la liste des journées
-     * -------------------------------
-     * @return ResponseEntity<List<Day>>
+     * @return Liste des journées
      */
     @GetMapping("/")
     public ResponseEntity<List<Day>> getAllDays() {
@@ -45,9 +44,8 @@ public class DayController {
 
     /**
      * Récupérer la liste des journées suivant l’id d’un championnat
-     * -------------------------------------------------------------
-     * @param id Long
-     * @return ResponseEntity<List<Day>>
+     * @param id Id du championnat
+     * @return Liste des journées
      */
     @GetMapping("/championship/{id}")
     public ResponseEntity<List<Day>> getAllDaysByChampionshipId(@PathVariable Long id) {
@@ -62,9 +60,8 @@ public class DayController {
 
     /**
      * Récupérer une journée suivant son id
-     * ------------------------------------
-     * @param id Long
-     * @return ResponseEntity<Day>
+     * @param id Id de la journée
+     * @return Journée
      */
     @GetMapping("/{id}")
     public ResponseEntity<Day> getDayById(@PathVariable Long id) {
@@ -78,15 +75,14 @@ public class DayController {
 
     /**
      * Créer une journée pour un championnat
-     * -------------------------------------
      * {
      *     "number": "Journée#01",
      *     "championship": {
      *         "id": 1
      *     }
      * }
-      * @param day Day
-     * @return ResponseEntity<Day>
+      * @param day Journée
+     * @return Journée
      */
    @PostMapping("/")
     public ResponseEntity<Day> saveDay(@Valid @RequestBody Day day){
@@ -99,10 +95,9 @@ public class DayController {
 
     /**
      * Mettre à jour une journée
-     * -------------------------
-     * @param id Long
-     * @param day Day
-     * @return ResponseEntity<Day>
+     * @param id Id de la journée
+     * @param day Journée
+     * @return Journée
      */
     @PutMapping("/{id}")
     public ResponseEntity<Day> updateDay(@PathVariable Long id, @Valid @RequestBody Day day) {
@@ -119,9 +114,8 @@ public class DayController {
 
     /**
      * Supprimer une journée
-     * ---------------------
-     * @param id Long
-     * @return ResponseEntity<Void>
+     * @param id Id de la journée
+     * @return Néant
      */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteDay(@PathVariable Long id) {

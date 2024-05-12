@@ -9,6 +9,4 @@ public interface UserRepository extends CrudRepository<User, Long> {
 
     @Override
     List<User> findAll();
-
-    List<User> findByEmailAndPassword(String email, String password);
 }

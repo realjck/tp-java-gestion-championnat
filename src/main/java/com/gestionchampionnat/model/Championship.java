@@ -44,6 +44,12 @@ public class Championship {
     @JsonIgnore
     private final Set<Team> teams = new HashSet<>();
 
+    /**
+     * Championnat
+     * @param name Nom du championnat
+     * @param startDate Date de début
+     * @param endDate Date de fin
+     */
     public Championship(String name, Date startDate, Date endDate) {
         this.name = name;
         this.startDate = startDate;

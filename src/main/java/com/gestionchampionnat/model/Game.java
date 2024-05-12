@@ -38,7 +38,6 @@ public class Game {
 
     /**
      * Résultats d'un jeu
-     * ------------------
      * @param team1Point Points de l'équipe 1
      * @param team2Point Points de l'équipe 2
      * @param team1 Équipe 1

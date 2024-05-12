@@ -30,8 +30,7 @@ public class UserController {
 
     /**
      * Récupérer la liste des utilisateurs
-     * -----------------------------------
-     * @return List<User>
+     * @return Liste d'utilisateurs
      */
     @GetMapping("/")
     public ResponseEntity<List<User>> getAllUsers() {
@@ -44,26 +43,21 @@ public class UserController {
 
     /**
      * Récupérer un utilisateur suivant son id
-     * ---------------------------------------
-     * @param user Long
-     * @return User
+     * @param id Id de l'utilisateur
+     * @return Utilisateur
      */
-    @GetMapping(value="/{user}")
-    public User getUserById(@PathVariable(name="user", required = false) User user) {
-        if (user == null) {
-            throw new ResponseStatusException(
-                    HttpStatus.NOT_FOUND, "Utilisateur introuvable"
-            );
-        }
-        return user;
+    @GetMapping(value="/{id}")
+    public User getUserById(@PathVariable Long id) {
+        Optional<User> user = userRepository.findById(id);
+        return user.map(value -> new ResponseEntity<>(value, HttpStatus.OK))
+                .orElseGet(() -> new ResponseEntity<>(HttpStatus.NOT_FOUND)).getBody();
     }
 
     /**
      * Récupérer un utilisateur suivant son adresse mail et son mot de passe
-     * ---------------------------------------------------------------------
-     * @param email String
-     * @param password String
-     * @return User
+     * @param email Email de l'utilisateur
+     * @param password Password de l'utilisateur non haché
+     * @return Utilisateur
      */
     @GetMapping(value = "/getUserByEmailAndPassword")
     public ResponseEntity<User> getUserByEmailAndPassword(@RequestParam String email, @RequestParam String password) {
@@ -80,9 +74,14 @@ public class UserController {
 
     /**
      * Créer un utilisateur
-     * --------------------
-     * @param user User
-     * @return ResponseEntity<User>
+     * {
+     *     "firstName" : "John",
+     *     "lastName" : "Doe",
+     *     "email" : "johndoe@gmail.com",
+     *     "password" : "password1243"
+     * }
+     * @param user Utilisateur
+     * @return Utilisateur
      */
     @PostMapping("/")
     public ResponseEntity<User> saveUser(@Valid @RequestBody User user) {
@@ -102,10 +101,9 @@ public class UserController {
 
     /**
      * Mettre à jour un utilisateur
-     * ----------------------------
-     * @param id Long
-     * @param user User
-     * @return ResponseEntity<User>
+     * @param id Id de l'utilisateur
+     * @param user Utilisateur
+     * @return Utilisateur
      */
     @PutMapping("/{id}")
     public ResponseEntity<User> updateUser(@PathVariable("id") Long id, @Valid @RequestBody User user) {
@@ -124,9 +122,8 @@ public class UserController {
 
     /**
      * Supprimer un utilisateur
-     * ------------------------
      * @param user User
-     * @return ResponseEntity<Void>
+     * @return Néant
      */
     @DeleteMapping(value = "/{user}")
     public ResponseEntity<Void> deleteUser(@PathVariable(name="user", required = false) User user) {

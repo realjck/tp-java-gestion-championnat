@@ -31,8 +31,7 @@ public class TeamController {
 
     /**
      * Récupérer la liste des équipes
-     * ------------------------------
-     * @return ResponseEntity<List<Team>>
+     * @return Liste d'équipes
      */
     @GetMapping("/")
     public ResponseEntity<List<Team>> getAllTeams() {
@@ -45,9 +44,8 @@ public class TeamController {
 
     /**
      * Récupérer la liste des équipes suivant l’id d’un championnat
-     * ------------------------------------------------------------
-     * @param championshipId Long
-     * @return ResponseEntity<List<Team>>
+     * @param championshipId Id du championnat
+     * @return Liste d'équipes
      */
     @GetMapping("/championship/{championshipId}")
     public ResponseEntity<List<Team>> getAllTeamsByChampionshipId(@PathVariable Long championshipId) {
@@ -60,9 +58,8 @@ public class TeamController {
 
     /**
      * Récupérer une équipe suivant son id
-     * -----------------------------------
-     * @param id Long
-     * @return Team
+     * @param id Id d'équipe
+     * @return Équipe
      */
     @GetMapping("/{id}")
     public ResponseEntity<Team> getTeamById(@PathVariable Long id) {
@@ -73,9 +70,11 @@ public class TeamController {
 
     /**
      * Créer une équipe
-     * ----------------
-     * @param team Team
-     * @return ResponseEntity<Team>
+     * {
+     *     "name": "Olympique Monaco"
+     * }
+     * @param team Équipe
+     * @return Équipe
      */
     @PostMapping("/")
     public ResponseEntity<Team> saveTeam(@Valid @RequestBody Team team) {
@@ -86,10 +85,9 @@ public class TeamController {
 
     /**
      * Ajouter une équipe à un championnat
-     * -----------------------------------
-     * @param teamId Long
-     * @param championshipId Long
-     * @return ResponseEntity<String>
+     * @param teamId Id d'équipe
+     * @param championshipId Id de championnat
+     * @return Équipe
      */
     @PostMapping("/add-to-championship/{teamId}/{championshipId}")
     public ResponseEntity<Team> addTeamToChampionship(@PathVariable Long teamId, @PathVariable Long championshipId) {
@@ -110,10 +108,9 @@ public class TeamController {
 
     /**
      * Mettre à jour une équipe
-     * ------------------------
-     * @param id Long
-     * @param updatedTeam Team
-     * @return ResponseEntity<Team>
+     * @param id Id d'équipe
+     * @param updatedTeam Équipe
+     * @return Équipe
      */
     @PutMapping("/{id}")
     public ResponseEntity<Team> updateTeam(@PathVariable Long id, @Valid @RequestBody Team updatedTeam) {
@@ -129,9 +126,8 @@ public class TeamController {
 
     /**
      * Supprimer une équipe
-     * ---------------------
-     * @param id Long
-     * @return ResponseEntity<String>
+     * @param id Id d'équipe
+     * @return Néant
      */
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteTeam(@PathVariable Long id) {
@@ -142,6 +138,5 @@ public class TeamController {
         teamRepository.deleteById(id);
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
-
 
 }
