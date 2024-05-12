@@ -1,6 +1,6 @@
 # TP Java Gestion Championnat
 
-_IPI CDEV 2023-2024 - JC. Kleinbourg_
+*IPI CDEV 2023-2024 - JC. Kleinbourg*
 
 ## Exercice Java Spring JPA
 
@@ -70,7 +70,7 @@ Le fichier Postman de collection comprend les syntaxes utilisées par l'API. Cel
   - updateGame()
   - deleteGame()
 
-_NB: Il a été choisi que l'API renvoie 204 No Content au lieu de tableaux vides._
+*NB: Il a été choisi que l'API renvoie 204 No Content au lieu de tableaux vides.*
 
 ## Interface OpenAPI Swagger
 
@@ -82,6 +82,7 @@ http://localhost:8090/swagger-ui/index.html
 
 ![Screenshot de Swagger](info/swagger-screenshot.png)
 
+*En l'état il s'agit d'une page auto-générée, une page avec documentation plus complète serait envisageable.*
 
 ## [Résultats des tests](info/postman-resultat-test/TPJavaGestionChampionship.postman_test_run.json)
 
@@ -90,5 +91,7 @@ La collection Postman comprend 136 tests sur l'ensemble des routes de l'API. Les
 ```
 info/postman-resultat-test/TPJavaGestionChampionship.postman_test_run.json
 ```
+
+*Les tests doivent s'exécuter avec la base de données à vide.*
 
 ![Screenshot de Postman](info/postman-screenshot.png)
