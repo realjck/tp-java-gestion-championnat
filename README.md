@@ -72,9 +72,20 @@ Le fichier Postman de collection comprend les syntaxes utilisées par l'API. Cel
 
 _NB: Il a été choisi que l'API renvoie 204 No Content au lieu de tableaux vides._
 
+## Interface OpenAPI Swagger
+
+L'application sert une interface d'accès à l'API avec Swagger. Celle-ci a été configurée pour fonctionner avec la dernière version de SpringBoot :
+
+```
+http://localhost:8090/swagger-ui/index.html
+```
+
+![Screenshot de Swagger](info/swagger-screenshot.png)
+
+
 ## [Résultats des tests](info/postman-resultat-test/TPJavaGestionChampionship.postman_test_run.json)
 
-La collection Postman comprend 136 tests de conformité sur l'ensemble des routes de l'API. Les résultats sont dans ce fichier :
+La collection Postman comprend 136 tests sur l'ensemble des routes de l'API. Les résultats sont dans ce fichier :
 
 ```
 info/postman-resultat-test/TPJavaGestionChampionship.postman_test_run.json
