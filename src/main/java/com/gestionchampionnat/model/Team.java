@@ -36,6 +36,11 @@ public class Team {
 
     public Team() {}
 
+    /**
+     * Équipe
+     * @param name Nom de l'équipe
+     * @param creationDate Date de création
+     */
     public Team(String name, LocalDate creationDate) {
         this.name = name;
         this.creationDate = creationDate;

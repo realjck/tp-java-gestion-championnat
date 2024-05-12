@@ -37,6 +37,13 @@ public class User {
     @Column(name = "creation_date")
     private LocalDate creationDate;
 
+    /**
+     * Utilisateur de l'application
+     * @param firstName Prénom
+     * @param lastName Nom
+     * @param email E-mail
+     * @param password Password
+     */
     public User(String firstName, String lastName, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
