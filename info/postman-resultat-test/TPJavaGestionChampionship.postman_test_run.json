@@ -1,7 +1,7 @@
 {
-	"id": "cb46887e-c1c7-4db1-af98-6ef0cfd2d46c",
+	"id": "dca9cac2-22da-4561-99d5-1dfefa10143b",
 	"name": "TPJavaGestionChampionship",
-	"timestamp": "2024-05-12T13:33:38.283Z",
+	"timestamp": "2024-05-12T23:33:07.184Z",
 	"collection_id": "34195992-07638758-13b9-4d79-be69-a479d7c7b307",
 	"folder_id": 0,
 	"environment_id": "0",
@@ -9,14 +9,14 @@
 	"delay": 0,
 	"persist": true,
 	"status": "finished",
-	"startedAt": "2024-05-12T13:33:34.121Z",
+	"startedAt": "2024-05-12T23:32:58.113Z",
 	"totalFail": 0,
 	"results": [
 		{
 			"id": "fbbce4de-1622-41f3-a931-2f56ae3a0a1d",
 			"name": "saveUser(1)",
 			"url": "localhost:8090/api/user/",
-			"time": 456,
+			"time": 435,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -46,7 +46,7 @@
 				}
 			},
 			"times": [
-				456
+				435
 			],
 			"allTests": [
 				{
@@ -61,7 +61,7 @@
 			"id": "afe2b504-8b98-4e40-91f4-8b54d3ca486d",
 			"name": "updateUser()",
 			"url": "localhost:8090/api/user/1",
-			"time": 171,
+			"time": 153,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -96,7 +96,7 @@
 				}
 			},
 			"times": [
-				171
+				153
 			],
 			"allTests": [
 				{
@@ -112,7 +112,7 @@
 			"id": "d68e28a8-66a3-4050-954f-a933e520b2db",
 			"name": "getAllUsers()",
 			"url": "localhost:8090/api/user/",
-			"time": 95,
+			"time": 73,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -147,7 +147,7 @@
 				}
 			},
 			"times": [
-				95
+				73
 			],
 			"allTests": [
 				{
@@ -214,7 +214,7 @@
 			"id": "77783fb9-b071-46d7-85a5-65bfc2588026",
 			"name": "getUserByEmailAndPassword()",
 			"url": "localhost:8090/api/user/getUserByEmailAndPassword?email=janedoe@gmail.com&password=password1243",
-			"time": 130,
+			"time": 111,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -249,7 +249,7 @@
 				}
 			},
 			"times": [
-				130
+				111
 			],
 			"allTests": [
 				{
@@ -265,7 +265,7 @@
 			"id": "ddf0f01f-cb6f-4cba-b2ff-e85d8edea283",
 			"name": "saveChampionship(1)",
 			"url": "localhost:8090/api/championship/",
-			"time": 46,
+			"time": 244,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -295,7 +295,7 @@
 				}
 			},
 			"times": [
-				46
+				244
 			],
 			"allTests": [
 				{
@@ -310,7 +310,7 @@
 			"id": "567220ac-4a11-4093-95b5-7955d6712f20",
 			"name": "saveChampionship(2)",
 			"url": "localhost:8090/api/championship/",
-			"time": 19,
+			"time": 148,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -340,7 +340,7 @@
 				}
 			},
 			"times": [
-				19
+				148
 			],
 			"allTests": [
 				{
@@ -355,7 +355,7 @@
 			"id": "018f5a20-9a06-4b0f-bc03-7576ddd5c178",
 			"name": "getAllChampionships()",
 			"url": "localhost:8090/api/championship/",
-			"time": 23,
+			"time": 25,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -385,7 +385,7 @@
 				}
 			},
 			"times": [
-				23
+				25
 			],
 			"allTests": [
 				{
@@ -400,7 +400,7 @@
 			"id": "76dbceea-ab18-49e0-bdf5-46cf17a1b8f5",
 			"name": "updateChampionship(1)",
 			"url": "localhost:8090/api/championship/1",
-			"time": 26,
+			"time": 104,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -430,7 +430,7 @@
 				}
 			},
 			"times": [
-				26
+				104
 			],
 			"allTests": [
 				{
@@ -484,7 +484,7 @@
 			"id": "a0631229-d155-460e-9ecc-bc5ca1404daa",
 			"name": "deleteChampionship(2)",
 			"url": "localhost:8090/api/championship/2",
-			"time": 32,
+			"time": 121,
 			"responseCode": {
 				"code": 204,
 				"name": "No Content"
@@ -499,7 +499,7 @@
 				}
 			},
 			"times": [
-				32
+				121
 			],
 			"allTests": [
 				{
@@ -511,7 +511,7 @@
 			"id": "db9345aa-8f84-4903-8cfd-6118cb1a2b21",
 			"name": "saveTeam(1)",
 			"url": "localhost:8090/api/team/",
-			"time": 23,
+			"time": 107,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -541,7 +541,7 @@
 				}
 			},
 			"times": [
-				23
+				107
 			],
 			"allTests": [
 				{
@@ -556,7 +556,7 @@
 			"id": "3dc64a5a-852d-4548-ab42-7d32d3d442d5",
 			"name": "saveTeam(2)",
 			"url": "localhost:8090/api/team/",
-			"time": 14,
+			"time": 101,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -586,7 +586,7 @@
 				}
 			},
 			"times": [
-				14
+				101
 			],
 			"allTests": [
 				{
@@ -601,7 +601,7 @@
 			"id": "61013ec7-10ba-4247-b6f8-067cb4698ddd",
 			"name": "saveTeam(3)",
 			"url": "localhost:8090/api/team/",
-			"time": 13,
+			"time": 98,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -631,7 +631,7 @@
 				}
 			},
 			"times": [
-				13
+				98
 			],
 			"allTests": [
 				{
@@ -646,7 +646,7 @@
 			"id": "0ef69d81-3150-4a0b-bc8e-a94c9b1ee17f",
 			"name": "saveTeam(4)",
 			"url": "localhost:8090/api/team/",
-			"time": 13,
+			"time": 100,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -676,7 +676,7 @@
 				}
 			},
 			"times": [
-				13
+				100
 			],
 			"allTests": [
 				{
@@ -691,7 +691,7 @@
 			"id": "0f6e5848-e765-45a5-8836-c96c429d64d9",
 			"name": "getAllTeams()",
 			"url": "localhost:8090/api/team/",
-			"time": 13,
+			"time": 12,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -726,7 +726,7 @@
 				}
 			},
 			"times": [
-				13
+				12
 			],
 			"allTests": [
 				{
@@ -742,7 +742,7 @@
 			"id": "74cb8600-567b-46e2-8171-5a7d678df49c",
 			"name": "getTeamById()",
 			"url": "localhost:8090/api/team/1",
-			"time": 11,
+			"time": 12,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -772,7 +772,7 @@
 				}
 			},
 			"times": [
-				11
+				12
 			],
 			"allTests": [
 				{
@@ -787,7 +787,7 @@
 			"id": "6d939ac8-7814-45fd-ba8d-7447b2f7e34a",
 			"name": "addTeamToChampionship(1)",
 			"url": "localhost:8090/api/team/add-to-championship/1/1",
-			"time": 39,
+			"time": 125,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -817,7 +817,7 @@
 				}
 			},
 			"times": [
-				39
+				125
 			],
 			"allTests": [
 				{
@@ -832,7 +832,7 @@
 			"id": "680c6099-2267-403b-922d-11a05f9e99a9",
 			"name": "addTeamToChampionship(2)",
 			"url": "localhost:8090/api/team/add-to-championship/2/1",
-			"time": 26,
+			"time": 112,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -862,7 +862,7 @@
 				}
 			},
 			"times": [
-				26
+				112
 			],
 			"allTests": [
 				{
@@ -877,7 +877,7 @@
 			"id": "3bcf447c-51b0-45e6-9b56-10283f573576",
 			"name": "addTeamToChampionship(3)",
 			"url": "localhost:8090/api/team/add-to-championship/3/1",
-			"time": 137,
+			"time": 112,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -907,7 +907,7 @@
 				}
 			},
 			"times": [
-				137
+				112
 			],
 			"allTests": [
 				{
@@ -922,7 +922,7 @@
 			"id": "3529f48c-bca2-4d06-87a4-30be258b72bc",
 			"name": "addTeamToChampionship(4)",
 			"url": "localhost:8090/api/team/add-to-championship/4/1",
-			"time": 66,
+			"time": 113,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -952,7 +952,7 @@
 				}
 			},
 			"times": [
-				66
+				113
 			],
 			"allTests": [
 				{
@@ -967,7 +967,7 @@
 			"id": "bf1abce4-63dd-4e8c-87ef-89c4dd1c2b39",
 			"name": "updateTeam()",
 			"url": "localhost:8090/api/team/1",
-			"time": 35,
+			"time": 109,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -997,7 +997,7 @@
 				}
 			},
 			"times": [
-				35
+				109
 			],
 			"allTests": [
 				{
@@ -1012,7 +1012,7 @@
 			"id": "8b79d595-88d8-48d7-9c29-f53630249d0a",
 			"name": "getAllTeamsByChampionshipId()",
 			"url": "localhost:8090/api/team/championship/1",
-			"time": 342,
+			"time": 238,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1037,7 +1037,7 @@
 				}
 			},
 			"times": [
-				342
+				238
 			],
 			"allTests": [
 				{
@@ -1051,7 +1051,7 @@
 			"id": "e2842b0c-eadf-470b-8a33-66bcaeca53a1",
 			"name": "saveDay(1)",
 			"url": "localhost:8090/api/day/",
-			"time": 30,
+			"time": 112,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -1081,7 +1081,7 @@
 				}
 			},
 			"times": [
-				30
+				112
 			],
 			"allTests": [
 				{
@@ -1096,7 +1096,7 @@
 			"id": "be52f656-3d2e-405a-a3c9-9e73b38842fe",
 			"name": "saveDay(2)",
 			"url": "localhost:8090/api/day/",
-			"time": 22,
+			"time": 107,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -1126,7 +1126,7 @@
 				}
 			},
 			"times": [
-				22
+				107
 			],
 			"allTests": [
 				{
@@ -1141,7 +1141,7 @@
 			"id": "baea4c3f-c650-4a8a-8289-deb79694e0d8",
 			"name": "getAllDays()",
 			"url": "localhost:8090/api/day/",
-			"time": 19,
+			"time": 18,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1171,7 +1171,7 @@
 				}
 			},
 			"times": [
-				19
+				18
 			],
 			"allTests": [
 				{
@@ -1186,7 +1186,7 @@
 			"id": "0caa265b-e3f6-4fa1-bf54-113e745b0a16",
 			"name": "getDayById(1)",
 			"url": "localhost:8090/api/day/1",
-			"time": 12,
+			"time": 11,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1216,7 +1216,7 @@
 				}
 			},
 			"times": [
-				12
+				11
 			],
 			"allTests": [
 				{
@@ -1231,7 +1231,7 @@
 			"id": "d0989403-e7fa-4257-b0bc-c92911cfc074",
 			"name": "updateDay(2)",
 			"url": "localhost:8090/api/day/2",
-			"time": 26,
+			"time": 110,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1261,7 +1261,7 @@
 				}
 			},
 			"times": [
-				26
+				110
 			],
 			"allTests": [
 				{
@@ -1276,7 +1276,7 @@
 			"id": "71341c9c-a88e-4196-b4de-26348c650581",
 			"name": "getDayById(2)",
 			"url": "localhost:8090/api/day/2",
-			"time": 10,
+			"time": 15,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1306,7 +1306,7 @@
 				}
 			},
 			"times": [
-				10
+				15
 			],
 			"allTests": [
 				{
@@ -1321,7 +1321,7 @@
 			"id": "bfd34a40-7c3c-477a-8501-329e745924ae",
 			"name": "getAllDaysByChampionshipId()",
 			"url": "localhost:8090/api/day/championship/1",
-			"time": 17,
+			"time": 16,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1351,7 +1351,7 @@
 				}
 			},
 			"times": [
-				17
+				16
 			],
 			"allTests": [
 				{
@@ -1366,7 +1366,7 @@
 			"id": "7acfe00e-8bff-4195-b541-3bf8597c60c3",
 			"name": "saveGame(1)",
 			"url": "localhost:8090/api/game/",
-			"time": 46,
+			"time": 130,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -1391,7 +1391,7 @@
 				}
 			},
 			"times": [
-				46
+				130
 			],
 			"allTests": [
 				{
@@ -1405,7 +1405,7 @@
 			"id": "06550728-60d2-45c0-9787-7f1908b7f0a0",
 			"name": "saveGame(2)",
 			"url": "localhost:8090/api/game/",
-			"time": 32,
+			"time": 115,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -1430,7 +1430,7 @@
 				}
 			},
 			"times": [
-				32
+				115
 			],
 			"allTests": [
 				{
@@ -1444,7 +1444,7 @@
 			"id": "7d820a6a-4094-4140-aedd-403df55fa827",
 			"name": "saveGame(3)",
 			"url": "localhost:8090/api/game/",
-			"time": 32,
+			"time": 117,
 			"responseCode": {
 				"code": 201,
 				"name": "Created"
@@ -1469,7 +1469,7 @@
 				}
 			},
 			"times": [
-				32
+				117
 			],
 			"allTests": [
 				{
@@ -1483,7 +1483,7 @@
 			"id": "903ff9ac-bf15-4b09-bcdc-c302d00fb273",
 			"name": "updateGame(1)",
 			"url": "localhost:8090/api/game/1",
-			"time": 34,
+			"time": 119,
 			"responseCode": {
 				"code": 200,
 				"name": "OK"
@@ -1508,7 +1508,7 @@
 				}
 			},
 			"times": [
-				34
+				119
 			],
 			"allTests": [
 				{
@@ -1522,100 +1522,10 @@
 			"id": "7708e408-5edb-42f8-b458-9f6da4b75ad1",
 			"name": "getAllGames()",
 			"url": "localhost:8090/api/game/",
-			"time": 23,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				23
-			],
-			"allTests": [
-				{}
-			]
-		},
-		{
-			"id": "855c3d15-cc4d-4f4e-93a6-b8f5efb18c88",
-			"name": "getAllGamesByChampionshipId()",
-			"url": "localhost:8090/api/game/championship/1",
-			"time": 19,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				19
-			],
-			"allTests": [
-				{}
-			]
-		},
-		{
-			"id": "dc9816ae-3651-49f2-969c-595dc641b0c2",
-			"name": "getAllGamesByDayId(1)",
-			"url": "localhost:8090/api/game/day/1",
-			"time": 20,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				20
-			],
-			"allTests": [
-				{}
-			]
-		},
-		{
-			"id": "74b78feb-3ad9-49f1-b477-83748a1bd2be",
-			"name": "getAllGamesByDayId(2)",
-			"url": "localhost:8090/api/game/day/2",
-			"time": 14,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				14
-			],
-			"allTests": [
-				{}
-			]
-		},
-		{
-			"id": "80fc5696-1f2d-4826-a17e-cbce96900778",
-			"name": "getGameById(1)",
-			"url": "localhost:8090/api/game/1",
-			"time": 11,
-			"responseCode": {
-				"code": 200,
-				"name": "OK"
-			},
-			"tests": {},
-			"testPassFailCounts": {},
-			"times": [
-				11
-			],
-			"allTests": [
-				{}
-			]
-		},
-		{
-			"id": "d7a15a56-94c1-4f77-b750-7dfc84508a7c",
-			"name": "deleteGame(1)",
-			"url": "localhost:8090/api/game/1",
 			"time": 21,
 			"responseCode": {
-				"code": 204,
-				"name": "No Content"
+				"code": 200,
+				"name": "OK"
 			},
 			"tests": {},
 			"testPassFailCounts": {},
@@ -1627,10 +1537,82 @@
 			]
 		},
 		{
-			"id": "cf8c532c-6c6c-4bee-bab8-eb664489aba8",
-			"name": "deleteGame(2)",
-			"url": "localhost:8090/api/game/2",
-			"time": 18,
+			"id": "855c3d15-cc4d-4f4e-93a6-b8f5efb18c88",
+			"name": "getAllGamesByChampionshipId()",
+			"url": "localhost:8090/api/game/championship/1",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				17
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dc9816ae-3651-49f2-969c-595dc641b0c2",
+			"name": "getAllGamesByDayId(1)",
+			"url": "localhost:8090/api/game/day/1",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				15
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "74b78feb-3ad9-49f1-b477-83748a1bd2be",
+			"name": "getAllGamesByDayId(2)",
+			"url": "localhost:8090/api/game/day/2",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				13
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "80fc5696-1f2d-4826-a17e-cbce96900778",
+			"name": "getGameById(1)",
+			"url": "localhost:8090/api/game/1",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				10
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d7a15a56-94c1-4f77-b750-7dfc84508a7c",
+			"name": "deleteGame(1)",
+			"url": "localhost:8090/api/game/1",
+			"time": 103,
 			"responseCode": {
 				"code": 204,
 				"name": "No Content"
@@ -1638,7 +1620,25 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				18
+				103
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cf8c532c-6c6c-4bee-bab8-eb664489aba8",
+			"name": "deleteGame(2)",
+			"url": "localhost:8090/api/game/2",
+			"time": 107,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				107
 			],
 			"allTests": [
 				{}
@@ -1648,7 +1648,7 @@
 			"id": "14973482-c6f5-476e-9189-1c6e8eccc95f",
 			"name": "deleteGame(3)",
 			"url": "localhost:8090/api/game/3",
-			"time": 18,
+			"time": 107,
 			"responseCode": {
 				"code": 204,
 				"name": "No Content"
@@ -1656,7 +1656,7 @@
 			"tests": {},
 			"testPassFailCounts": {},
 			"times": [
-				18
+				107
 			],
 			"allTests": [
 				{}
@@ -1666,7 +1666,7 @@
 			"id": "2775fa96-828b-443d-bc83-615ae7c99152",
 			"name": "deleteDay(1)",
 			"url": "localhost:8090/api/day/1",
-			"time": 20,
+			"time": 100,
 			"responseCode": {
 				"code": 204,
 				"name": "No Content"
@@ -1681,7 +1681,7 @@
 				}
 			},
 			"times": [
-				20
+				100
 			],
 			"allTests": [
 				{
@@ -1693,7 +1693,7 @@
 			"id": "f8dff008-e331-4006-a98e-4a4aaf879f3a",
 			"name": "deleteDay(2)",
 			"url": "localhost:8090/api/day/2",
-			"time": 19,
+			"time": 108,
 			"responseCode": {
 				"code": 204,
 				"name": "No Content"
@@ -1708,7 +1708,7 @@
 				}
 			},
 			"times": [
-				19
+				108
 			],
 			"allTests": [
 				{
@@ -1720,7 +1720,7 @@
 			"id": "64774746-e8c3-4b43-a399-f831116ccc5c",
 			"name": "deleteTeam(4)",
 			"url": "localhost:8090/api/team/4",
-			"time": 19,
+			"time": 103,
 			"responseCode": {
 				"code": 204,
 				"name": "No Content"
@@ -1735,7 +1735,7 @@
 				}
 			},
 			"times": [
-				19
+				103
 			],
 			"allTests": [
 				{
@@ -1747,7 +1747,7 @@
 			"id": "06458504-7cef-4c4a-8efe-cf0950f78f4f",
 			"name": "deleteUser(1)",
 			"url": "localhost:8090/api/user/1",
-			"time": 27,
+			"time": 110,
 			"responseCode": {
 				"code": 204,
 				"name": "No Content"
@@ -1762,7 +1762,7 @@
 				}
 			},
 			"times": [
-				27
+				110
 			],
 			"allTests": [
 				{
@@ -1772,7 +1772,7 @@
 		}
 	],
 	"count": 1,
-	"totalTime": 2266,
+	"totalTime": 4364,
 	"collection": {
 		"requests": [
 			{

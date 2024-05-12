@@ -7,6 +7,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -89,7 +90,8 @@ public class UserController {
         // date de création à date du jour
         user.setCreationDate(LocalDate.now());
         // hash du password
-        String hashedPassword = passwordEncoder.encode(user.getPassword());
+        String rawPassword = user.getPassword();
+        String hashedPassword = passwordEncoder.encode(rawPassword);
         user.setPassword(hashedPassword);
         // emails uniques entre chaque utilisateur
         try {

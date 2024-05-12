@@ -4,7 +4,7 @@
 
 ## Exercice Java Spring JPA
 
-Application qui permet de gérer les résultats d’un championnat de foot. Les utilisateurs une fois connectés pourront créer des championnats, des équipes, des journées et saisir des résultats. Les visiteurs du site pourront consulter les championnats, les équipes et voir le classement d’un championnat.
+Application qui permet de gérer les résultats d’un championnat de foot. Les utilisateurs une fois connectés peuvent créer des championnats, des équipes, des journées et saisir des résultats. Les visiteurs du site peuvent consulter les championnats, les équipes et voir le classement d’un championnat.
 
 ![schéma de base de donnée](/info/schema.png)
 
@@ -33,20 +33,24 @@ info/postman-collection/TPJavaGestionChampionship.postman_collection.json
 
 Le fichier Postman de collection comprend les syntaxes utilisées par l'API. Celles-ci sont documentées dans la Javadoc des méthodes des contrôleurs.
 
-- ### Utilisateurs (/api/user/)
+**La route `/api/user/` est ouverte (PermitAll()) : **
+- ### Utilisateurs (`/api/user/`)
   - getAllUsers()
   - getUserById()
   - getUserByEmailAndPassword()
   - saveUser()
   - updateUser()
   - deleteUser()
-- ### Championnats (/api/championship/)
+
+**Pour les routes suivantes, les méthodes POST, PUT/PATCH et DELETE nécessitent une authentification (Basic auth avec username = email et password), avec un utilisateur créé via `/api/user/` :**
+
+- ### Championnats (`/api/championship/`)
   - getAllChampionships()
   - getChampionshipById()
   - saveChampionship()
   - updateChampionship()
   - deleteChampionship()
-- ### Équipes (/api/team/)
+- ### Équipes (`/api/team/`)
   - getAllTeams()
   - getAllTeamsByChampionshipId()
   - getTeamById()
@@ -54,14 +58,14 @@ Le fichier Postman de collection comprend les syntaxes utilisées par l'API. Cel
   - addTeamToChampionship()
   - updateTeam()
   - deleteTeam()
-- ### Journées (/api/day/)
+- ### Journées (`/api/day/`)
   - getAllDays()
   - getAllDaysByChampionshipId()
   - getDayById()
   - saveDay()
   - updateDay()
   - deleteDay()
-- ### Résultats (/api/game/)
+- ### Résultats (`/api/game/`)
   - getAllGames()
   - getAllGamesByChampionshipId()
   - getAllGamesByDayId()
