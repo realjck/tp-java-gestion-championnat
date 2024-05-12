@@ -33,7 +33,7 @@ info/postman-collection/TPJavaGestionChampionship.postman_collection.json
 
 Le fichier Postman de collection comprend les syntaxes utilisées par l'API. Celles-ci sont documentées dans la Javadoc des méthodes des contrôleurs.
 
-**La route `/api/user/` est ouverte (PermitAll()) : **
+**La route `/api/user/` est ouverte aux visiteurs :**
 - ### Utilisateurs (`/api/user/`)
   - getAllUsers()
   - getUserById()
@@ -86,7 +86,7 @@ http://localhost:8090/swagger-ui/index.html
 
 ![Screenshot de Swagger](info/swagger-screenshot.png)
 
-*En l'état il s'agit d'une page auto-générée, une page avec documentation plus complète serait envisageable.*
+En l'état il s'agit d'une page auto-générée, une version plus complète serait envisageable.
 
 ## [Résultats des tests](info/postman-resultat-test/TPJavaGestionChampionship.postman_test_run.json)
 
