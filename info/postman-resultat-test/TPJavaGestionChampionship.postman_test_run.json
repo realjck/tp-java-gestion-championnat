@@ -1,0 +1,1964 @@
+{
+	"id": "cb46887e-c1c7-4db1-af98-6ef0cfd2d46c",
+	"name": "TPJavaGestionChampionship",
+	"timestamp": "2024-05-12T13:33:38.283Z",
+	"collection_id": "34195992-07638758-13b9-4d79-be69-a479d7c7b307",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 136,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-05-12T13:33:34.121Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "fbbce4de-1622-41f3-a931-2f56ae3a0a1d",
+			"name": "saveUser(1)",
+			"url": "localhost:8090/api/user/",
+			"time": 456,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - id, firstName, lastName, email, password, and creationDate": true,
+				"Email is in a valid format": true,
+				"Password should not be empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, firstName, lastName, email, password, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Password should not be empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				456
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - id, firstName, lastName, email, password, and creationDate": true,
+					"Email is in a valid format": true,
+					"Password should not be empty": true
+				}
+			]
+		},
+		{
+			"id": "afe2b504-8b98-4e40-91f4-8b54d3ca486d",
+			"name": "updateUser()",
+			"url": "localhost:8090/api/user/1",
+			"time": 171,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type is application/json": true,
+				"Id, firstName, lastName, email, password, and creationDate fields should exist": true,
+				"Email is in a valid format": true,
+				"Password should not be empty": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id, firstName, lastName, email, password, and creationDate fields should exist": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Password should not be empty": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				171
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type is application/json": true,
+					"Id, firstName, lastName, email, password, and creationDate fields should exist": true,
+					"Email is in a valid format": true,
+					"Password should not be empty": true
+				}
+			]
+		},
+		{
+			"id": "d68e28a8-66a3-4050-954f-a933e520b2db",
+			"name": "getAllUsers()",
+			"url": "localhost:8090/api/user/",
+			"time": 95,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Email is in a valid format": true,
+				"Password should not be empty": true,
+				"Creation date is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Password should not be empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Creation date is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				95
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Email is in a valid format": true,
+					"Password should not be empty": true,
+					"Creation date is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "6145ae2f-3770-4392-9e4e-70ebba1702db",
+			"name": "getUserById()",
+			"url": "localhost:8090/api/user/1",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - id, firstName, lastName, email, password, and creationDate": true,
+				"Email is in a valid format": true,
+				"Password should not be empty": true,
+				"Creation date is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, firstName, lastName, email, password, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Password should not be empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Creation date is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - id, firstName, lastName, email, password, and creationDate": true,
+					"Email is in a valid format": true,
+					"Password should not be empty": true,
+					"Creation date is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "77783fb9-b071-46d7-85a5-65bfc2588026",
+			"name": "getUserByEmailAndPassword()",
+			"url": "localhost:8090/api/user/getUserByEmailAndPassword?email=janedoe@gmail.com&password=password1243",
+			"time": 130,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Email is in a valid format": true,
+				"Password should not be empty": true,
+				"Creation date is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Password should not be empty": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Creation date is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				130
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Email is in a valid format": true,
+					"Password should not be empty": true,
+					"Creation date is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "ddf0f01f-cb6f-4cba-b2ff-e85d8edea283",
+			"name": "saveChampionship(1)",
+			"url": "localhost:8090/api/championship/",
+			"time": 46,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields": true,
+				"End date is after the start date": true,
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"End date is after the start date": {
+					"pass": 1,
+					"fail": 0
+				},
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				46
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields": true,
+					"End date is after the start date": true,
+					"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+				}
+			]
+		},
+		{
+			"id": "567220ac-4a11-4093-95b5-7955d6712f20",
+			"name": "saveChampionship(2)",
+			"url": "localhost:8090/api/championship/",
+			"time": 19,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields": true,
+				"End date is after the start date": true,
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"End date is after the start date": {
+					"pass": 1,
+					"fail": 0
+				},
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields": true,
+					"End date is after the start date": true,
+					"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+				}
+			]
+		},
+		{
+			"id": "018f5a20-9a06-4b0f-bc03-7576ddd5c178",
+			"name": "getAllChampionships()",
+			"url": "localhost:8090/api/championship/",
+			"time": 23,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Verify that the response is in JSON format": true,
+				"Id, wonPoint, and lostPoint are non-negative integers": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id, wonPoint, and lostPoint are non-negative integers": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Verify that the response is in JSON format": true,
+					"Id, wonPoint, and lostPoint are non-negative integers": true
+				}
+			]
+		},
+		{
+			"id": "76dbceea-ab18-49e0-bdf5-46cf17a1b8f5",
+			"name": "updateChampionship(1)",
+			"url": "localhost:8090/api/championship/1",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"End date is after the start date": true,
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"End date is after the start date": {
+					"pass": 1,
+					"fail": 0
+				},
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"End date is after the start date": true,
+					"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+				}
+			]
+		},
+		{
+			"id": "fb26f628-ee53-4621-8e2a-edf17c7f79b0",
+			"name": "getChampionshipById()",
+			"url": "localhost:8090/api/championship/1",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields": true,
+				"Verify that the response is in JSON format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the response is in JSON format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields": true,
+					"Verify that the response is in JSON format": true
+				}
+			]
+		},
+		{
+			"id": "a0631229-d155-460e-9ecc-bc5ca1404daa",
+			"name": "deleteChampionship(2)",
+			"url": "localhost:8090/api/championship/2",
+			"time": 32,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Response status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "db9345aa-8f84-4903-8cfd-6118cb1a2b21",
+			"name": "saveTeam(1)",
+			"url": "localhost:8090/api/team/",
+			"time": 23,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name is a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name is a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "3dc64a5a-852d-4548-ab42-7d32d3d442d5",
+			"name": "saveTeam(2)",
+			"url": "localhost:8090/api/team/",
+			"time": 14,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name is a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				14
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name is a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "61013ec7-10ba-4247-b6f8-067cb4698ddd",
+			"name": "saveTeam(3)",
+			"url": "localhost:8090/api/team/",
+			"time": 13,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name is a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name is a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "0ef69d81-3150-4a0b-bc8e-a94c9b1ee17f",
+			"name": "saveTeam(4)",
+			"url": "localhost:8090/api/team/",
+			"time": 13,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name is a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name is a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "0f6e5848-e765-45a5-8836-c96c429d64d9",
+			"name": "getAllTeams()",
+			"url": "localhost:8090/api/team/",
+			"time": 13,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"CreationDate is in a valid date format": true,
+				"Content-Type header is application/json": true,
+				"Verify that the response is an array with at least one element": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that the response is an array with at least one element": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				13
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"CreationDate is in a valid date format": true,
+					"Content-Type header is application/json": true,
+					"Verify that the response is an array with at least one element": true
+				}
+			]
+		},
+		{
+			"id": "74cb8600-567b-46e2-8171-5a7d678df49c",
+			"name": "getTeamById()",
+			"url": "localhost:8090/api/team/1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name should be a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name should be a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				11
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name should be a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "6d939ac8-7814-45fd-ba8d-7447b2f7e34a",
+			"name": "addTeamToChampionship(1)",
+			"url": "localhost:8090/api/team/add-to-championship/1/1",
+			"time": 39,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name is a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				39
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name is a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "680c6099-2267-403b-922d-11a05f9e99a9",
+			"name": "addTeamToChampionship(2)",
+			"url": "localhost:8090/api/team/add-to-championship/2/1",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name is a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name is a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "3bcf447c-51b0-45e6-9b56-10283f573576",
+			"name": "addTeamToChampionship(3)",
+			"url": "localhost:8090/api/team/add-to-championship/3/1",
+			"time": 137,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name is a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				137
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name is a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "3529f48c-bca2-4d06-87a4-30be258b72bc",
+			"name": "addTeamToChampionship(4)",
+			"url": "localhost:8090/api/team/add-to-championship/4/1",
+			"time": 66,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name is a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				66
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name is a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "bf1abce4-63dd-4e8c-87ef-89c4dd1c2b39",
+			"name": "updateTeam()",
+			"url": "localhost:8090/api/team/1",
+			"time": 35,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the required fields - id, name, and creationDate": true,
+				"Name is a non-empty string": true,
+				"CreationDate is in a valid date format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields - id, name, and creationDate": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Name is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"CreationDate is in a valid date format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				35
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the required fields - id, name, and creationDate": true,
+					"Name is a non-empty string": true,
+					"CreationDate is in a valid date format": true
+				}
+			]
+		},
+		{
+			"id": "8b79d595-88d8-48d7-9c29-f53630249d0a",
+			"name": "getAllTeamsByChampionshipId()",
+			"url": "localhost:8090/api/team/championship/1",
+			"time": 342,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response has the correct Content-Type header": true,
+				"Verify the response array is of the expected length": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the correct Content-Type header": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify the response array is of the expected length": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				342
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response has the correct Content-Type header": true,
+					"Verify the response array is of the expected length": true
+				}
+			]
+		},
+		{
+			"id": "e2842b0c-eadf-470b-8a33-66bcaeca53a1",
+			"name": "saveDay(1)",
+			"url": "localhost:8090/api/day/",
+			"time": 30,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Id, number, and championship fields are present": true,
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id, number, and championship fields are present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				30
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Id, number, and championship fields are present": true,
+					"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+				}
+			]
+		},
+		{
+			"id": "be52f656-3d2e-405a-a3c9-9e73b38842fe",
+			"name": "saveDay(2)",
+			"url": "localhost:8090/api/day/",
+			"time": 22,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Id, number, and championship fields are present": true,
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id, number, and championship fields are present": {
+					"pass": 1,
+					"fail": 0
+				},
+				"WonPoint, LostPoint, and DrawPoint are non-negative integers": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				22
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Id, number, and championship fields are present": true,
+					"WonPoint, LostPoint, and DrawPoint are non-negative integers": true
+				}
+			]
+		},
+		{
+			"id": "baea4c3f-c650-4a8a-8289-deb79694e0d8",
+			"name": "getAllDays()",
+			"url": "localhost:8090/api/day/",
+			"time": 19,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type is application/json": true,
+				"Validate the array structure and its elements": true,
+				"Validate the championship object": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the array structure and its elements": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Validate the championship object": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type is application/json": true,
+					"Validate the array structure and its elements": true,
+					"Validate the championship object": true
+				}
+			]
+		},
+		{
+			"id": "0caa265b-e3f6-4fa1-bf54-113e745b0a16",
+			"name": "getDayById(1)",
+			"url": "localhost:8090/api/day/1",
+			"time": 12,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Id and number fields should exist and be of valid type": true,
+				"Championship object and its properties are present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id and number fields should exist and be of valid type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Championship object and its properties are present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				12
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Id and number fields should exist and be of valid type": true,
+					"Championship object and its properties are present": true
+				}
+			]
+		},
+		{
+			"id": "d0989403-e7fa-4257-b0bc-c92911cfc074",
+			"name": "updateDay(2)",
+			"url": "localhost:8090/api/day/2",
+			"time": 26,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Id is a non-negative integer": true,
+				"Number is a non-empty string": true,
+				"Championship has the required fields": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id is a non-negative integer": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Number is a non-empty string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Championship has the required fields": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				26
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Id is a non-negative integer": true,
+					"Number is a non-empty string": true,
+					"Championship has the required fields": true
+				}
+			]
+		},
+		{
+			"id": "71341c9c-a88e-4196-b4de-26348c650581",
+			"name": "getDayById(2)",
+			"url": "localhost:8090/api/day/2",
+			"time": 10,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Id and number fields should exist and be of valid type": true,
+				"Championship object and its properties are present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id and number fields should exist and be of valid type": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Championship object and its properties are present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				10
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Id and number fields should exist and be of valid type": true,
+					"Championship object and its properties are present": true
+				}
+			]
+		},
+		{
+			"id": "bfd34a40-7c3c-477a-8501-329e745924ae",
+			"name": "getAllDaysByChampionshipId()",
+			"url": "localhost:8090/api/day/championship/1",
+			"time": 17,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response content type is application/json": true,
+				"Id and number fields must exist in the response": true,
+				"Championship object structure and fields verification": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response content type is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id and number fields must exist in the response": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Championship object structure and fields verification": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				17
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response content type is application/json": true,
+					"Id and number fields must exist in the response": true,
+					"Championship object structure and fields verification": true
+				}
+			]
+		},
+		{
+			"id": "7acfe00e-8bff-4195-b541-3bf8597c60c3",
+			"name": "saveGame(1)",
+			"url": "localhost:8090/api/game/",
+			"time": 46,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Content-Type header is application/json": true,
+				"Id, number, and championship fields are present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id, number, and championship fields are present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				46
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Content-Type header is application/json": true,
+					"Id, number, and championship fields are present": true
+				}
+			]
+		},
+		{
+			"id": "06550728-60d2-45c0-9787-7f1908b7f0a0",
+			"name": "saveGame(2)",
+			"url": "localhost:8090/api/game/",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Content-Type header is application/json": true,
+				"Id, number, and championship fields are present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id, number, and championship fields are present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Content-Type header is application/json": true,
+					"Id, number, and championship fields are present": true
+				}
+			]
+		},
+		{
+			"id": "7d820a6a-4094-4140-aedd-403df55fa827",
+			"name": "saveGame(3)",
+			"url": "localhost:8090/api/game/",
+			"time": 32,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Content-Type header is application/json": true,
+				"Id, number, and championship fields are present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id, number, and championship fields are present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				32
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Content-Type header is application/json": true,
+					"Id, number, and championship fields are present": true
+				}
+			]
+		},
+		{
+			"id": "903ff9ac-bf15-4b09-bcdc-c302d00fb273",
+			"name": "updateGame(1)",
+			"url": "localhost:8090/api/game/1",
+			"time": 34,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Content-Type header is application/json": true,
+				"Id, number, and championship fields are present": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Content-Type header is application/json": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Id, number, and championship fields are present": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				34
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Content-Type header is application/json": true,
+					"Id, number, and championship fields are present": true
+				}
+			]
+		},
+		{
+			"id": "7708e408-5edb-42f8-b458-9f6da4b75ad1",
+			"name": "getAllGames()",
+			"url": "localhost:8090/api/game/",
+			"time": 23,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				23
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "855c3d15-cc4d-4f4e-93a6-b8f5efb18c88",
+			"name": "getAllGamesByChampionshipId()",
+			"url": "localhost:8090/api/game/championship/1",
+			"time": 19,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				19
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "dc9816ae-3651-49f2-969c-595dc641b0c2",
+			"name": "getAllGamesByDayId(1)",
+			"url": "localhost:8090/api/game/day/1",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				20
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "74b78feb-3ad9-49f1-b477-83748a1bd2be",
+			"name": "getAllGamesByDayId(2)",
+			"url": "localhost:8090/api/game/day/2",
+			"time": 14,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				14
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "80fc5696-1f2d-4826-a17e-cbce96900778",
+			"name": "getGameById(1)",
+			"url": "localhost:8090/api/game/1",
+			"time": 11,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				11
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d7a15a56-94c1-4f77-b750-7dfc84508a7c",
+			"name": "deleteGame(1)",
+			"url": "localhost:8090/api/game/1",
+			"time": 21,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				21
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "cf8c532c-6c6c-4bee-bab8-eb664489aba8",
+			"name": "deleteGame(2)",
+			"url": "localhost:8090/api/game/2",
+			"time": 18,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "14973482-c6f5-476e-9189-1c6e8eccc95f",
+			"name": "deleteGame(3)",
+			"url": "localhost:8090/api/game/3",
+			"time": 18,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				18
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2775fa96-828b-443d-bc83-615ae7c99152",
+			"name": "deleteDay(1)",
+			"url": "localhost:8090/api/day/1",
+			"time": 20,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				20
+			],
+			"allTests": [
+				{
+					"Response status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "f8dff008-e331-4006-a98e-4a4aaf879f3a",
+			"name": "deleteDay(2)",
+			"url": "localhost:8090/api/day/2",
+			"time": 19,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Response status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "64774746-e8c3-4b43-a399-f831116ccc5c",
+			"name": "deleteTeam(4)",
+			"url": "localhost:8090/api/team/4",
+			"time": 19,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				19
+			],
+			"allTests": [
+				{
+					"Response status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "06458504-7cef-4c4a-8efe-cf0950f78f4f",
+			"name": "deleteUser(1)",
+			"url": "localhost:8090/api/user/1",
+			"time": 27,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Response status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				27
+			],
+			"allTests": [
+				{
+					"Response status code is 204": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2266,
+	"collection": {
+		"requests": [
+			{
+				"id": "fbbce4de-1622-41f3-a931-2f56ae3a0a1d",
+				"method": "POST"
+			},
+			{
+				"id": "afe2b504-8b98-4e40-91f4-8b54d3ca486d",
+				"method": "PUT"
+			},
+			{
+				"id": "d68e28a8-66a3-4050-954f-a933e520b2db",
+				"method": "GET"
+			},
+			{
+				"id": "6145ae2f-3770-4392-9e4e-70ebba1702db",
+				"method": "GET"
+			},
+			{
+				"id": "77783fb9-b071-46d7-85a5-65bfc2588026",
+				"method": "GET"
+			},
+			{
+				"id": "ddf0f01f-cb6f-4cba-b2ff-e85d8edea283",
+				"method": "POST"
+			},
+			{
+				"id": "567220ac-4a11-4093-95b5-7955d6712f20",
+				"method": "POST"
+			},
+			{
+				"id": "018f5a20-9a06-4b0f-bc03-7576ddd5c178",
+				"method": "GET"
+			},
+			{
+				"id": "76dbceea-ab18-49e0-bdf5-46cf17a1b8f5",
+				"method": "PATCH"
+			},
+			{
+				"id": "fb26f628-ee53-4621-8e2a-edf17c7f79b0",
+				"method": "GET"
+			},
+			{
+				"id": "a0631229-d155-460e-9ecc-bc5ca1404daa",
+				"method": "DELETE"
+			},
+			{
+				"id": "db9345aa-8f84-4903-8cfd-6118cb1a2b21",
+				"method": "POST"
+			},
+			{
+				"id": "3dc64a5a-852d-4548-ab42-7d32d3d442d5",
+				"method": "POST"
+			},
+			{
+				"id": "61013ec7-10ba-4247-b6f8-067cb4698ddd",
+				"method": "POST"
+			},
+			{
+				"id": "0ef69d81-3150-4a0b-bc8e-a94c9b1ee17f",
+				"method": "POST"
+			},
+			{
+				"id": "0f6e5848-e765-45a5-8836-c96c429d64d9",
+				"method": "GET"
+			},
+			{
+				"id": "74cb8600-567b-46e2-8171-5a7d678df49c",
+				"method": "GET"
+			},
+			{
+				"id": "6d939ac8-7814-45fd-ba8d-7447b2f7e34a",
+				"method": "POST"
+			},
+			{
+				"id": "680c6099-2267-403b-922d-11a05f9e99a9",
+				"method": "POST"
+			},
+			{
+				"id": "3bcf447c-51b0-45e6-9b56-10283f573576",
+				"method": "POST"
+			},
+			{
+				"id": "3529f48c-bca2-4d06-87a4-30be258b72bc",
+				"method": "POST"
+			},
+			{
+				"id": "bf1abce4-63dd-4e8c-87ef-89c4dd1c2b39",
+				"method": "PUT"
+			},
+			{
+				"id": "8b79d595-88d8-48d7-9c29-f53630249d0a",
+				"method": "GET"
+			},
+			{
+				"id": "e2842b0c-eadf-470b-8a33-66bcaeca53a1",
+				"method": "POST"
+			},
+			{
+				"id": "be52f656-3d2e-405a-a3c9-9e73b38842fe",
+				"method": "POST"
+			},
+			{
+				"id": "baea4c3f-c650-4a8a-8289-deb79694e0d8",
+				"method": "GET"
+			},
+			{
+				"id": "0caa265b-e3f6-4fa1-bf54-113e745b0a16",
+				"method": "GET"
+			},
+			{
+				"id": "d0989403-e7fa-4257-b0bc-c92911cfc074",
+				"method": "PUT"
+			},
+			{
+				"id": "71341c9c-a88e-4196-b4de-26348c650581",
+				"method": "GET"
+			},
+			{
+				"id": "bfd34a40-7c3c-477a-8501-329e745924ae",
+				"method": "GET"
+			},
+			{
+				"id": "7acfe00e-8bff-4195-b541-3bf8597c60c3",
+				"method": "POST"
+			},
+			{
+				"id": "06550728-60d2-45c0-9787-7f1908b7f0a0",
+				"method": "POST"
+			},
+			{
+				"id": "7d820a6a-4094-4140-aedd-403df55fa827",
+				"method": "POST"
+			},
+			{
+				"id": "903ff9ac-bf15-4b09-bcdc-c302d00fb273",
+				"method": "PUT"
+			},
+			{
+				"id": "7708e408-5edb-42f8-b458-9f6da4b75ad1",
+				"method": "GET"
+			},
+			{
+				"id": "855c3d15-cc4d-4f4e-93a6-b8f5efb18c88",
+				"method": "GET"
+			},
+			{
+				"id": "dc9816ae-3651-49f2-969c-595dc641b0c2",
+				"method": "GET"
+			},
+			{
+				"id": "74b78feb-3ad9-49f1-b477-83748a1bd2be",
+				"method": "GET"
+			},
+			{
+				"id": "80fc5696-1f2d-4826-a17e-cbce96900778",
+				"method": "GET"
+			},
+			{
+				"id": "d7a15a56-94c1-4f77-b750-7dfc84508a7c",
+				"method": "DELETE"
+			},
+			{
+				"id": "cf8c532c-6c6c-4bee-bab8-eb664489aba8",
+				"method": "DELETE"
+			},
+			{
+				"id": "14973482-c6f5-476e-9189-1c6e8eccc95f",
+				"method": "DELETE"
+			},
+			{
+				"id": "2775fa96-828b-443d-bc83-615ae7c99152",
+				"method": "DELETE"
+			},
+			{
+				"id": "f8dff008-e331-4006-a98e-4a4aaf879f3a",
+				"method": "DELETE"
+			},
+			{
+				"id": "64774746-e8c3-4b43-a399-f831116ccc5c",
+				"method": "DELETE"
+			},
+			{
+				"id": "06458504-7cef-4c4a-8efe-cf0950f78f4f",
+				"method": "DELETE"
+			}
+		]
+	}
+}
